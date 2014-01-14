@@ -1,4 +1,4 @@
-require_relative './fizzbuzz'
+require 'fizzbuzz'
 
 describe 'FizzBuzz' do
   

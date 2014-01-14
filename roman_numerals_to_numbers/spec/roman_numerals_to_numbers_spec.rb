@@ -1,67 +1,67 @@
-require_relative './roman_numerals_to_numbers'
+require 'roman_numerals_to_numbers'
 
 describe 'roman numerals to numbers' do
 
   context 'single numerals' do
-    example 'I becomes 1' do
+    it 'I becomes 1' do
       expect(roman_numeral_to_number('I')).to eq 1
     end
 
-    example 'V becomes 5' do
+    it 'V becomes 5' do
       expect(roman_numeral_to_number('V')).to eq 5
     end
 
-    example 'X becomes 10' do
+    it 'X becomes 10' do
       expect(roman_numeral_to_number('X')).to eq 10
     end
 
-    example 'L becomes 50' do
+    it 'L becomes 50' do
       expect(roman_numeral_to_number('L')).to eq 50
     end
 
-    example 'C becomes 100' do
+    it 'C becomes 100' do
       expect(roman_numeral_to_number('C')).to eq 100
     end
 
-    example 'M becomes 1000' do
+    it 'M becomes 1000' do
       expect(roman_numeral_to_number('M')).to eq 1000
     end
   end
 
   context 'appended numerals' do
-    example 'III becomes 3' do
+    it 'III becomes 3' do
       expect(roman_numeral_to_number('III')).to eq 3
     end
 
-    example 'XVII becomes 17' do
+    it 'XVII becomes 17' do
       expect(roman_numeral_to_number('XVII')).to eq 17
     end
 
-    example 'LII becomes 52' do
+    it 'LII becomes 52' do
       expect(roman_numeral_to_number('LII')).to eq 52
     end
   end
 
   context 'prepended numerals' do
-    example 'IV becomes 4' do
+    it 'IV becomes 4' do
       expect(roman_numeral_to_number('IV')).to eq 4
     end
 
-    example 'XIX becomes 19' do
+    it 'XIX becomes 19' do
       expect(roman_numeral_to_number('XIX')).to eq 19
     end
   end
 
-  describe 'complex examples' do
-    example 'XXXVIII becomes 38' do
+  describe 'complex its' do
+    it 'XXXVIII becomes 38' do
       expect(roman_numeral_to_number('XXXVIII')).to eq 38
     end
 
-    example 'XCIX becomes 99' do
+    it 'XCIX becomes 99' do
       expect(roman_numeral_to_number('XCIX')).to eq 99
     end
 
-    example 'MCMLXXXVIII becomes 1988' do
+    it 'MCMLXXXVIII becomes 1988' do
       expect(roman_numeral_to_number('MCMLXXXVIII')).to eq 1988
     end
   end

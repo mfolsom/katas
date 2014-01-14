@@ -1,2 +1,0 @@
-def roman_numeral_to_number(numeral)
-end
